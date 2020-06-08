@@ -1,0 +1,60 @@
+@import "../../styles/commons.scss";
+
+.task-list {
+  margin: 2em 0;
+  overflow: auto;
+  height: 100%;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid $grey-10;
+  border-radius: 4px;
+  background: $white;
+  margin: 1em 0;
+  margin-right:0.7em;
+  position: relative;
+  flex-direction: column;
+  .flex1{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .task-title {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .task-time {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+}
+div{
+  display: block;
+}
+
+.task-card .task-remarks {
+  margin: .5em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-card .removebutton {
+  border: none;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  position: absolute;
+  right: -4%;
+  top: -10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #e1e1e1;
+  .picture{
+    height: 1.2em;
+  }
+}
